@@ -12,3 +12,6 @@ class CarListCreate(generics.ListCreateAPIView):
 class CarDetailUpdateDelete(generics.RetrieveUpdateDestroyAPIView):
     queryset = Car.objects.all()
     serializer_class = CarSerializer
+    
+def home(request):
+    return render(request, 'base.html')
