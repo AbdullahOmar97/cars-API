@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('cars.urls')),
     path('', views.home, name='home'),
+    path('auth/', include('authapp.urls')),
 ]
